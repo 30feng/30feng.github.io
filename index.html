@@ -1,1 +1,181 @@
-zxc
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1020">
+    <title>30元凤楼 · 地址导航</title>
+    <meta name="description" content="30元凤楼地址导航与备用域名列表，请以页面实际可访问情况为准。">
+    <style>
+        :root{--bg:#090d19;--panel:rgba(18,25,45,.82);--line:rgba(255,255,255,.10);--muted:#9ca8c5;--text:#f4f7ff;--a:#8b7cff;--b:#36d9c5}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 10% 0%,rgba(103,80,255,.22),transparent 38%),radial-gradient(ellipse at 90% 15%,rgba(54,217,197,.12),transparent 32%),var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;min-height:100vh}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1080px,calc(100% - 32px));margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}
+.brand{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.3px}
+.logo{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--a),var(--b));color:#07111c;font-weight:900;font-size:20px;box-shadow:0 8px 28px #6d5df344}
+.nav-tag{font-size:12px;color:#c5cbe0;border:1px solid var(--line);padding:8px 12px;border-radius:99px}
+.hero{padding:54px 0 34px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid rgba(139,124,255,.35);background:rgba(139,124,255,.1);border-radius:99px;color:#c7c0ff;font-size:12px;letter-spacing:1px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--b);box-shadow:0 0 12px var(--b)}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.1;letter-spacing:-1.8px;margin:22px 0 16px}
+h1 span{background:linear-gradient(90deg,#b7aaff,#5de9d7);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bookmark-note{display:flex;align-items:center;gap:13px;text-align:left;max-width:760px;margin:27px auto 0;padding:17px 18px;border:1px solid rgba(255,190,95,.28);border-radius:16px;background:linear-gradient(110deg,rgba(255,190,95,.10),rgba(139,124,255,.08));box-shadow:0 12px 35px rgba(0,0,0,.12)}
+.bookmark-mark{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;border-radius:12px;background:rgba(255,190,95,.15);color:#ffd37c;font-size:20px}
+.bookmark-copy{flex:1;min-width:0}
+.bookmark-copy strong{font-size:14px;color:#ffe0a3}
+.bookmark-copy p{margin:5px 0;font-size:13px;overflow-wrap:anywhere}
+.bookmark-copy p a{color:#bcb4ff;text-decoration:underline;text-underline-offset:3px}
+.bookmark-copy span{color:var(--muted);font-size:12px;line-height:1.6}
+.bookmark-note .action{flex:0 0 auto}
+.subtitle{max-width:610px;margin:0 auto;color:var(--muted);font-size:15px;line-height:1.9}
+.primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:27px;padding:14px 21px;border-radius:13px;background:linear-gradient(100deg,#8b7cff,#5e9fff);color:#fff;font-weight:750;box-shadow:0 12px 30px #685aff30;transition:transform .2s}
+.primary:hover{transform:translateY(-2px)}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:36px 0 18px}
+.section-head h2{margin:0;font-size:22px}
+.section-head p{margin:6px 0 0;color:var(--muted);font-size:13px}
+.count{color:#c8c3ff;font-size:12px;background:#8b7cff1c;border:1px solid #8b7cff40;border-radius:9px;padding:7px 10px;white-space:nowrap}
+.searchbar{display:flex;gap:10px;margin:0 0 18px}
+.searchbox{position:relative;flex:1}
+.searchbox span{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:#8994b1}
+input{width:100%;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:12px;padding:14px 15px 14px 42px;color:var(--text);outline:none;font-size:14px}
+input:focus{border-color:#8b7cff88;box-shadow:0 0 0 3px #8b7cff18}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.site{background:linear-gradient(145deg,rgba(24,32,56,.88),rgba(15,21,38,.86));border:1px solid var(--line);border-radius:17px;padding:17px;min-width:0;transition:transform .2s,border-color .2s}
+.site:hover{transform:translateY(-3px);border-color:#8b7cff77}
+.site-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.site-icon{display:grid;place-items:center;width:39px;height:39px;border-radius:12px;background:linear-gradient(135deg,#8b7cff2e,#36d9c51b);border:1px solid #ffffff12;color:#c9c1ff;font-size:17px;font-weight:800}
+.status{font-size:11px;color:#a8f5e8;background:#36d9c51a;border:1px solid #36d9c533;padding:5px 8px;border-radius:99px}
+.site h3{font-size:15px;margin:15px 0 6px;overflow-wrap:anywhere}
+.url{font-size:12px;color:#9eaac7;overflow-wrap:anywhere;min-height:34px;line-height:1.6}
+.actions{display:flex;gap:8px;margin-top:15px}
+.action{flex:1;text-align:center;border:1px solid var(--line);border-radius:9px;padding:9px 8px;font-size:12px;background:#ffffff08;cursor:pointer;color:#e9edff}
+.action.visit{background:#8b7cff20;border-color:#8b7cff45;color:#d6d0ff}
+.action:hover{filter:brightness(1.2)}
+.empty{display:none;text-align:center;padding:28px;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
+.notice{display:grid;grid-template-columns:42px 1fr;gap:13px;margin:36px 0;padding:20px;border:1px solid #f2c36a30;background:linear-gradient(110deg,#f2c36a0c,#8b7cff08);border-radius:16px}
+.notice-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#f2c36a16;color:#ffd98a;font-size:19px}
+.notice h3{margin:1px 0 7px;font-size:15px}
+.notice p{margin:0;color:var(--muted);font-size:13px;line-height:1.9}
+footer{border-top:1px solid var(--line);padding:23px 0 30px;color:#7e89a7;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,15px);opacity:0;pointer-events:none;background:#202943;border:1px solid #ffffff20;border-radius:12px;padding:11px 16px;font-size:13px;box-shadow:0 10px 35px #0006;transition:.22s;z-index:10}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:38px 0 24px}.section-head{margin-top:28px}}
+@media(max-width:480px){.bookmark-note{align-items:flex-start;flex-wrap:wrap}.bookmark-copy{width:calc(100% - 55px)}.bookmark-note .action{margin-left:53px}.wrap{width:min(100% - 24px,1080px)}nav{padding:17px 0}.nav-tag{font-size:10px}.grid{grid-template-columns:1fr}.site{padding:16px}.hero{padding-top:31px}h1{letter-spacing:-1px}.subtitle{font-size:14px}.section-head h2{font-size:19px}.notice{padding:15px}}
+</style>
+</head>
+
+<body>
+    <div class="wrap">
+        <nav>
+            <a class="brand" href="#" aria-label="30元凤楼首页"><span class="logo">30</span><span>元凤楼导航 <span style="color:#8f9ab8;font-weight:500">/ HUB</span></span></a>
+            <span class="nav-tag">地址发布 · 入口导航</span>
+        </nav>
+        <header class="hero">
+            <div class="eyebrow"><span class="dot"></span> OFFICIAL LINK CENTER</div>
+            <h1>一个入口，<span>轻松直达</span></h1>
+            <p class="subtitle">将常用入口集中在这里。建议收藏本导航页；访问前请核对域名，并以实际可访问情况为准。</p>
+            <a class="primary" href="https://30feng.github.io/" target="_blank" rel="noopener noreferrer">↗ 打开导航主页</a>
+            <div class="bookmark-note">
+                <div class="bookmark-mark">★</div>
+                <div class="bookmark-copy">
+                    <strong>请务必收藏我们 Github 的防封地址</strong>
+                    <p><a href="https://30feng.github.io/" target="_blank" rel="noopener noreferrer">https://30feng.github.io</a></p>
+                    <span>牢记此地址，建议截图保存，方便下次快速找到入口。</span>
+                </div>
+                <button class="action" data-copy="https://30feng.github.io/">复制地址</button>
+            </div>
+        </header>
+        <section>
+            <div class="section-head">
+                <div>
+                    <h2>备用地址</h2>
+                    <p>选择一个入口访问，或复制网址以便保存</p>
+                </div>
+                <span class="count" id="count">共 12 个地址</span>
+            </div>
+            <div class="searchbar">
+                <div class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="搜索域名，例如 fengliu.me" aria-label="搜索备用地址"></div>
+            </div>
+            <div class="grid" id="sites">
+                <article class="site" data-domain="meethub.me">
+                    <div class="site-top"><span class="site-icon">↗</span><span class="status">最新地址</span></div>
+                    <h3>最新地址，此地址会不定时更新。</h3>
+                    <div class="url">https://yuanfen99.top</div>
+                    <div class="actions"><a class="action visit" href="https://yuanfen99.top" target="_blank" rel="noopener noreferrer">立即访问 ↗</a><button class="action" data-copy="https://yuanfen99.top">复制链接</button></div>
+                </article>
+                <article class="site" data-domain="meethub.me">
+                    <div class="site-top"><span class="site-icon">↗</span><span class="status">永久地址</span></div>
+                    <h3>海外永久地址 - 打不开请翻墙</h3>
+                    <div class="url">https://30hubx.com</div>
+                    <div class="actions"><a class="action visit" href="https://30hubx.com" target="_blank" rel="noopener noreferrer">立即访问 ↗</a><button class="action" data-copy="https://30hubx.com">复制链接</button></div>
+                </article>
+                <article class="site" data-domain="meethub.me">
+                    <div class="site-top"><span class="site-icon">↗</span><span class="status">官方邮箱</span></div>
+                    <h3>回家邮箱 - 发送任意内容获取最新地址</h3>
+                    <div class="url">30yuanfenglou@gmail.com</div>
+                    <div class="actions"><button class="action" data-copy="30yuanfenglou@gmail.com">复制邮箱</button></div>
+                </article>
+            </div>
+            <div class="empty" id="empty">没有找到匹配的域名，换个关键词试试。</div>
+        </section>
+        <aside class="notice">
+            <div class="notice-icon">i</div>
+            <div>
+                <h3>无法打开页面？</h3>
+                <p>请先检查网址是否输入正确，并尝试更新浏览器、清理缓存或切换网络。若浏览器显示安全风险提示，请先核实网站真实性，不建议为了访问而关闭杀毒或安全防护功能。以上地址的可用性可能变化。</p>
+            </div>
+        </aside>
+        <footer><span>© 30元凤楼 · 地址导航</span><span>请认准域名，谨慎识别非官方链接</span></footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script>
+    const search = document.getElementById('search');
+    const cards = [...document.querySelectorAll('.site')];
+    const count = document.getElementById('count');
+    const empty = document.getElementById('empty');
+    search.addEventListener('input', () => {
+        const q = search.value.trim().toLowerCase();
+        let visible = 0;
+        cards.forEach(card => {
+            const show = (card.dataset.domain + ' ' + card.innerText).toLowerCase().includes(q);
+            card.style.display = show ? '' : 'none';
+            if (show) visible++;
+        });
+        count.textContent = `显示 ${visible} / ${cards.length} 个地址`;
+        empty.style.display = visible ? 'none' : 'block';
+    });
+    const toast = document.getElementById('toast');
+    let toastTimer;
+
+    function showToast(msg) {
+        toast.textContent = msg;
+        toast.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
+    }
+    document.querySelectorAll('[data-copy]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+            const value = btn.dataset.copy;
+            try {
+                await navigator.clipboard.writeText(value);
+                showToast('复制成功：' + value);
+            } catch {
+                const area = document.createElement('textarea');
+                area.value = value;
+                area.style.position = 'fixed';
+                area.style.opacity = '0';
+                document.body.appendChild(area);
+                area.select();
+                try { document.execCommand('copy');
+                    showToast('链接已复制：' + value); } catch { showToast('复制失败，请手动复制：' + value); }
+                area.remove();
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>
